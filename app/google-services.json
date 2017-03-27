@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "466567243997",
+    "firebase_url": "https://minimography.firebaseio.com",
+    "project_id": "minimography",
+    "storage_bucket": "minimography.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466567243997:android:7759d1d0fe193aa9",
+        "android_client_info": {
+          "package_name": "com.vicky7230.minimography"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466567243997-34kvoe090fj451f5694gqloqkinrksl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcc26DFOo-wX65iNRpRPDl1EA6bVhPPBs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
