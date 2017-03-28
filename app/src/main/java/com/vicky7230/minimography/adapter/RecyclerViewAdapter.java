@@ -21,6 +21,7 @@ import com.vicky7230.minimography.model.Wallpaper;
 public class RecyclerViewAdapter extends FirebaseRecyclerAdapter<Wallpaper, WallpaperViewHolder> {
 
     public static final String IMAGE_URL = "url";
+    public static final String TITLE = "title";
     private Context context;
 
     /**
@@ -51,6 +52,7 @@ public class RecyclerViewAdapter extends FirebaseRecyclerAdapter<Wallpaper, Wall
 
                 Intent intent = new Intent(context, WallpaperActivity.class);
                 intent.putExtra(IMAGE_URL, getItem(position).getImage());
+                intent.putExtra(TITLE, getItem(position).getTitle());
 
                 context.startActivity(intent, bundle);
 
