@@ -6,4 +6,4 @@ A wallpaper app for minimal wallpapers.
 
 # Concept
 
-<img width='800' hspace='20' src='https://github.com/vicky7230/MINIMO/blob/master/app/src/main/res/drawable/attachment.png' />
+<img width='800' hspace='20' src='https://github.com/vicky7230/MINIMO/blob/master/app/src/main/res/drawable/playstore_icon.png' />
