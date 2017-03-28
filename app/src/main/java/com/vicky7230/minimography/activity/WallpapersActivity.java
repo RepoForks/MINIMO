@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.View;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -14,6 +15,7 @@ import com.joanzapata.iconify.IconDrawable;
 import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 import com.vicky7230.minimography.R;
 import com.vicky7230.minimography.adapter.RecyclerViewAdapter;
+import com.vicky7230.minimography.adapter.WallpaperViewHolder;
 import com.vicky7230.minimography.model.Wallpaper;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -52,7 +54,7 @@ public class WallpapersActivity extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference(DATA);
 
-        recyclerViewAdapter = new RecyclerViewAdapter(WallpapersActivity.this, Wallpaper.class, R.layout.wallpaper, RecyclerViewAdapter.WallpaperViewHolder.class, databaseReference);
+        recyclerViewAdapter = new RecyclerViewAdapter(WallpapersActivity.this, Wallpaper.class, R.layout.wallpaper, WallpaperViewHolder.class, databaseReference);
 
         wallpapersRecyclerView.setAdapter(recyclerViewAdapter);
 

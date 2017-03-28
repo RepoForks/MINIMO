@@ -24,7 +24,8 @@
         <activity
             android:name=".activity.WallpapersActivity"
             android:screenOrientation="portrait"/>
-
+        <activity android:name=".activity.WallpaperActivity">
+        </activity>
     </application>
 
 </manifest>

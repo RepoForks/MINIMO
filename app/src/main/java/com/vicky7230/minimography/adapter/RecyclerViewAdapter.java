@@ -1,23 +1,26 @@
 package com.vicky7230.minimography.adapter;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.Query;
-import com.vicky7230.minimography.R;
+import com.vicky7230.minimography.activity.WallpaperActivity;
 import com.vicky7230.minimography.model.Wallpaper;
 
 /**
  * Created by agrim on 27/3/17.
  */
 
-public class RecyclerViewAdapter extends FirebaseRecyclerAdapter<Wallpaper, RecyclerViewAdapter.WallpaperViewHolder> {
+public class RecyclerViewAdapter extends FirebaseRecyclerAdapter<Wallpaper, WallpaperViewHolder> {
 
+    public static final String IMAGE_URL = "url";
     private Context context;
 
     /**
@@ -36,41 +39,39 @@ public class RecyclerViewAdapter extends FirebaseRecyclerAdapter<Wallpaper, Recy
     }
 
     @Override
+    public WallpaperViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
+        final WallpaperViewHolder wallpaperViewHolder = super.onCreateViewHolder(parent, viewType);
+
+        wallpaperViewHolder.setOnClickListener(new WallpaperViewHolder.ClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+
+                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation((Activity) context, wallpaperViewHolder.imageView, wallpaperViewHolder.imageView.getTransitionName()).toBundle();
+
+                Intent intent = new Intent(context, WallpaperActivity.class);
+                intent.putExtra(IMAGE_URL, getItem(position).getImage());
+
+                context.startActivity(intent, bundle);
+
+            }
+
+            @Override
+            public void onItemLongClick(View view, int position) {
+
+            }
+
+        });
+
+        return wallpaperViewHolder;
+    }
+
+    @Override
     protected void populateViewHolder(WallpaperViewHolder viewHolder, Wallpaper model, int position) {
 
-        viewHolder.setTitle(model.getTitle());
-        viewHolder.setImage(context, model.getImage());
+        viewHolder.titleTextView.setText(model.getTitle());
+        Glide.with(context).load(model.getImage()).into(viewHolder.imageView);
 
     }
 
-    public static class WallpaperViewHolder extends RecyclerView.ViewHolder {
-
-        View view;
-
-        public WallpaperViewHolder(View itemView) {
-
-            super(itemView);
-
-            view = itemView;
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-
-                }
-            });
-        }
-
-        public void setTitle(String title) {
-            TextView titleTextView = (TextView) view.findViewById(R.id.title);
-            titleTextView.setText(title);
-        }
-
-        public void setImage(Context ctx, String image) {
-            ImageView imageView = (ImageView) view.findViewById(R.id.image);
-            // We Need TO pass Context
-            Glide.with(ctx).load(image).into(imageView);
-        }
-    }
 }
