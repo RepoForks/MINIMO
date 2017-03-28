@@ -1,4 +1,4 @@
-# MINIMOGRAPHY
+# MINIMO
 
 ![alt text](https://github.com/vicky7230/MINIMO/blob/master/app/src/main/res/mipmap-xhdpi/ic_launcher.png "Logo")
 
