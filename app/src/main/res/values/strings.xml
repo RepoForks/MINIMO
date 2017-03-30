@@ -2,4 +2,8 @@
     <string name="app_name">MINIMO</string>
     <string name="search">Search</string>
     <string name="wallpaper_transition">Wallpaper Transition</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="download_now">DOWNLOAD NOW</string>
 </resources>

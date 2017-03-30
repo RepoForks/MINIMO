@@ -39,6 +39,6 @@ dependencies {
     compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
     compile 'com.joanzapata.iconify:android-iconify-typicons:2.2.2'
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
-    testCompile 'junit:junit:4.12'
     compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    testCompile 'junit:junit:4.12'
 }
