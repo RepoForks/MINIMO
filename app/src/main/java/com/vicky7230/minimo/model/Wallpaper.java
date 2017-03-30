@@ -1,4 +1,4 @@
-package com.vicky7230.minimography.model;
+package com.vicky7230.minimo.model;
 
 /**
  * Created by agrim on 27/3/17.

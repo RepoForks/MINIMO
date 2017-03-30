@@ -1,4 +1,4 @@
-package com.vicky7230.minimography.activity;
+package com.vicky7230.minimo.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-import com.vicky7230.minimography.R;
+import com.vicky7230.minimo.R;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

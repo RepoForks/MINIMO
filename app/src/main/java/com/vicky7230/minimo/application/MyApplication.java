@@ -1,4 +1,4 @@
-package com.vicky7230.minimography.application;
+package com.vicky7230.minimo.application;
 
 import android.app.Application;
 
@@ -7,7 +7,7 @@ import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.joanzapata.iconify.fonts.IoniconsModule;
 import com.joanzapata.iconify.fonts.MaterialModule;
 import com.joanzapata.iconify.fonts.TypiconsModule;
-import com.vicky7230.minimography.R;
+import com.vicky7230.minimo.R;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 

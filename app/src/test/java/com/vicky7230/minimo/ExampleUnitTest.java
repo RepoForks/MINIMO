@@ -1,4 +1,4 @@
-package com.vicky7230.minimography;
+package com.vicky7230.minimo;
 
 import org.junit.Test;
 

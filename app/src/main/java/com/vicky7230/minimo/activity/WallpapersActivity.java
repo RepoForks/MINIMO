@@ -1,22 +1,17 @@
-package com.vicky7230.minimography.activity;
+package com.vicky7230.minimo.activity;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.View;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.joanzapata.iconify.IconDrawable;
-import com.joanzapata.iconify.fonts.FontAwesomeIcons;
-import com.vicky7230.minimography.R;
-import com.vicky7230.minimography.adapter.RecyclerViewAdapter;
-import com.vicky7230.minimography.adapter.WallpaperViewHolder;
-import com.vicky7230.minimography.model.Wallpaper;
+import com.vicky7230.minimo.R;
+import com.vicky7230.minimo.adapter.RecyclerViewAdapter;
+import com.vicky7230.minimo.adapter.WallpaperViewHolder;
+import com.vicky7230.minimo.model.Wallpaper;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

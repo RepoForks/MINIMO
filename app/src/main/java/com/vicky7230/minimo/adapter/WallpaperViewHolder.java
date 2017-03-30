@@ -1,11 +1,11 @@
-package com.vicky7230.minimography.adapter;
+package com.vicky7230.minimo.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.vicky7230.minimography.R;
+import com.vicky7230.minimo.R;
 
 /**
  * Created by agrim on 28/3/17.

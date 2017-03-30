@@ -1,4 +1,4 @@
-package com.vicky7230.minimography.activity;
+package com.vicky7230.minimo.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.vicky7230.minimography.R;
-import com.vicky7230.minimography.adapter.RecyclerViewAdapter;
+import com.vicky7230.minimo.R;
+import com.vicky7230.minimo.adapter.RecyclerViewAdapter;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 import uk.co.senab.photoview.PhotoView;

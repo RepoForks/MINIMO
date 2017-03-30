@@ -1,4 +1,4 @@
-package com.vicky7230.minimography.adapter;
+package com.vicky7230.minimo.adapter;
 
 import android.app.Activity;
 import android.app.ActivityOptions;
@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.Query;
-import com.vicky7230.minimography.activity.WallpaperActivity;
-import com.vicky7230.minimography.model.Wallpaper;
+import com.vicky7230.minimo.activity.WallpaperActivity;
+import com.vicky7230.minimo.model.Wallpaper;
 
 /**
  * Created by agrim on 27/3/17.
