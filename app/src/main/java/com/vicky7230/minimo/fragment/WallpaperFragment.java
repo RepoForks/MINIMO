@@ -63,6 +63,8 @@ public class WallpaperFragment extends DialogFragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        getDialog().getWindow()
+                .getAttributes().windowAnimations = R.style.DialogAnimation;
 
         imageView = (ImageView) getView().findViewById(R.id.wallpaper_diag);
 
@@ -75,7 +77,7 @@ public class WallpaperFragment extends DialogFragment {
                     .crossFade()
                     .into(imageView);
 
-            Toast.makeText(getActivity(), "Loading......", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getActivity(), "Loading......", Toast.LENGTH_SHORT).show();
 
         }
 

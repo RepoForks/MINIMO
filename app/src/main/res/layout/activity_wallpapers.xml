@@ -33,13 +33,14 @@
             android:textSize="18sp"/>
 
         <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="20dp"
-            android:text="{fa-search}"
+            android:text="{fa-info-circle}"
             android:textColor="@color/colorAccent"
-            android:textSize="18sp"/>
+            android:textSize="24sp"/>
 
     </LinearLayout>
 
