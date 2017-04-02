@@ -3,6 +3,7 @@
     package="com.vicky7230.minimo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".application.MyApplication"
@@ -29,7 +30,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activity.AboutActivity"
-            android:label="About"
+            android:label="ABOUT"
             android:screenOrientation="portrait" />
     </application>
 

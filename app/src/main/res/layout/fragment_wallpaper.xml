@@ -11,6 +11,7 @@
         android:layout_weight="1"/>
 
     <Button
+        android:id="@+id/download_button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textColor="@android:color/white"
