@@ -1,13 +1,16 @@
 package com.vicky7230.minimo.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.joanzapata.iconify.widget.IconTextView;
 import com.vicky7230.minimo.R;
 import com.vicky7230.minimo.adapter.RecyclerViewAdapter;
 import com.vicky7230.minimo.adapter.WallpaperViewHolder;
@@ -25,6 +28,8 @@ public class WallpapersActivity extends AppCompatActivity {
 
     private RecyclerViewAdapter recyclerViewAdapter;
 
+    private IconTextView gear;
+
 
     @Override
     protected void attachBaseContext(Context context) {
@@ -41,6 +46,13 @@ public class WallpapersActivity extends AppCompatActivity {
 
     private void init() {
 
+        gear = (IconTextView) findViewById(R.id.gear);
+        gear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(WallpapersActivity.this, AboutActivity.class));
+            }
+        });
 
         wallpapersRecyclerView = (RecyclerView) findViewById(R.id.wallpapers);
         wallpapersRecyclerView.setHasFixedSize(true);

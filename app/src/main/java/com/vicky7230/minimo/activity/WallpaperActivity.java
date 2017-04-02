@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.transition.Slide;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
@@ -25,7 +27,7 @@ public class WallpaperActivity extends AppCompatActivity {
     private static final String FRAG_TAG_WALLPAPER_FRAGMENT = "wallpaperFragment";
     private PhotoView photoView;
     private TextView textViewTitle;
-    Intent intent;
+    private Intent intent;
 
     private IconTextView downArrow;
 
