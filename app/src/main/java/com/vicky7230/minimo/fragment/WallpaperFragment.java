@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -121,8 +120,7 @@ public class WallpaperFragment extends DialogFragment {
                 if (ContextCompat.checkSelfPermission(getActivity(),
                         Manifest.permission.WRITE_EXTERNAL_STORAGE)
                         != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(getActivity(),
-                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
                             MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
                 } else {
 
@@ -141,7 +139,7 @@ public class WallpaperFragment extends DialogFragment {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "JPEG_" + timeStamp + "_";
         String folderPath = Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_PICTURES) + "/WallPic";
+                Environment.DIRECTORY_PICTURES) + "/Minimo";
         File folder = new File(folderPath);
         if (!folder.exists()) {
             File wallpaperDirectory = new File(folderPath);
