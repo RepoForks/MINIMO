@@ -7,9 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ProgressBar;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.joanzapata.iconify.widget.IconTextView;
 import com.vicky7230.minimo.R;
 import com.vicky7230.minimo.adapter.RecyclerViewAdapter;
@@ -30,6 +34,7 @@ public class WallpapersActivity extends AppCompatActivity {
 
     private IconTextView gear;
 
+    private ProgressBar progressBar;
 
     @Override
     protected void attachBaseContext(Context context) {
@@ -45,6 +50,8 @@ public class WallpapersActivity extends AppCompatActivity {
     }
 
     private void init() {
+
+        progressBar = (ProgressBar) findViewById(R.id.progressBar3);
 
         gear = (IconTextView) findViewById(R.id.gear);
         gear.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +72,19 @@ public class WallpapersActivity extends AppCompatActivity {
 
         wallpapersRecyclerView.setAdapter(recyclerViewAdapter);
 
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                progressBar.setVisibility(View.GONE);
+                wallpapersRecyclerView.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
 }

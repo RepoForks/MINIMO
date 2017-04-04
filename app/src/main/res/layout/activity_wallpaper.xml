@@ -22,7 +22,7 @@
 
         <TextView
             android:id="@+id/title_bottom"
-            fontPath="fonts/Acre-Semibold.ttf"
+            fontPath="fonts/JosefinSans-SemiBold.ttf"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"

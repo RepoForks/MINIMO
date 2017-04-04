@@ -16,7 +16,7 @@
         android:layout_height="60dp"
         android:textColor="@android:color/white"
         android:textSize="20sp"
-        fontPath="fonts/Acre-Semibold.ttf"
+        fontPath="fonts/JosefinSans-SemiBold.ttf"
         android:text="@string/download_now"
         android:background="@color/colorAccent"/>
 </LinearLayout>

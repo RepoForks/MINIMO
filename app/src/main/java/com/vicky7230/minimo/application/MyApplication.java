@@ -29,7 +29,7 @@ public class MyApplication extends Application {
                 .with(new TypiconsModule());
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/Acre-Semibold.ttf")
+                .setDefaultFontPath("fonts/JosefinSans-SemiBold.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
