@@ -191,14 +191,14 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/colorAccent"/>
 
-            <TextView
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/circle_image_view"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="hdodenhof/CircleImageView"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"/>
 
@@ -209,14 +209,14 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/colorAccent"/>
 
-            <TextView
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/calligraphy"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="chrisjenx/Calligraphy"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"/>
 
@@ -227,14 +227,14 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/colorAccent"/>
 
-            <TextView
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/iconify"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="JoanZapata/android-iconify"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"/>
 
@@ -245,14 +245,14 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/colorAccent"/>
 
-            <TextView
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/photo_view"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="chrisbanes/PhotoView"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"/>
 
@@ -263,7 +263,26 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/colorAccent"/>
 
-            <TextView
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/glide"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorAccent"/>
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/html_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="15dp"
@@ -271,7 +290,6 @@
                 android:layout_marginRight="15dp"
                 android:background="@color/colorPrimaryDark"
                 android:gravity="center"
-                android:text="bumptech/glide"
                 android:textColor="@color/colorAccent"
                 android:textSize="18sp"/>
 
@@ -284,7 +302,8 @@
                 android:background="@color/colorPrimaryDark"
                 android:orientation="horizontal">
 
-                <TextView
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/fonts"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:gravity="center"
