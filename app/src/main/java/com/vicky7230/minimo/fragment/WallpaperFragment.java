@@ -45,7 +45,7 @@ public class WallpaperFragment extends DialogFragment {
 
     private Button downloadButton;
 
-    private Bitmap bitmap;
+    private Bitmap bitmap = null;
 
     public WallpaperFragment() {
         // Required empty public constructor
@@ -117,14 +117,22 @@ public class WallpaperFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
 
-                if (ContextCompat.checkSelfPermission(getActivity(),
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                        != PackageManager.PERMISSION_GRANTED) {
-                    requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                            MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+                if (bitmap != null) {
+
+                    if (ContextCompat.checkSelfPermission(getActivity(),
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                            != PackageManager.PERMISSION_GRANTED) {
+                        requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
+                    } else {
+
+                        saveInGallery();
+
+                    }
+
                 } else {
 
-                    saveInGallery();
+                    Toast.makeText(getActivity(), "Wait till the wallpaper finishes loading.", Toast.LENGTH_SHORT).show();
 
                 }
 

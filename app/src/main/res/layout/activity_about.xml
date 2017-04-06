@@ -52,8 +52,8 @@
                 android:layout_height="wrap_content"/>-->
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/playstore_icon"/>
 
@@ -113,6 +113,7 @@
                             android:orientation="horizontal">
 
                             <com.joanzapata.iconify.widget.IconTextView
+                                android:id="@+id/facebook"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -122,6 +123,7 @@
                                 android:textSize="30sp"/>
 
                             <com.joanzapata.iconify.widget.IconTextView
+                                android:id="@+id/mail"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -131,6 +133,7 @@
                                 android:textSize="30sp"/>
 
                             <com.joanzapata.iconify.widget.IconTextView
+                                android:id="@+id/github"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -140,6 +143,7 @@
                                 android:textSize="30sp"/>
 
                             <com.joanzapata.iconify.widget.IconTextView
+                                android:id="@+id/stack_overflow"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -149,6 +153,7 @@
                                 android:textSize="30sp"/>
 
                             <com.joanzapata.iconify.widget.IconTextView
+                                android:id="@+id/linkedin"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -305,13 +310,25 @@
                 <org.sufficientlysecure.htmltextview.HtmlTextView
                     android:id="@+id/fonts"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="170dp"
                     android:gravity="center"
+                    android:lineSpacingExtra="4dp"
                     android:text="Font used : Josefin Sans"
-                    android:textColor="@color/colorAccent"
                     android:textSize="18sp"/>
 
             </LinearLayout>
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/pexels"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:textSize="18sp"/>
 
         </LinearLayout>
 
