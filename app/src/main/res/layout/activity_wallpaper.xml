@@ -37,6 +37,8 @@
             android:layout_height="match_parent"
             android:layout_marginRight="20dp"
             android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:text="{typcn-arrow-down}"
             android:textColor="@color/colorAccent"
             android:textSize="40sp"/>
