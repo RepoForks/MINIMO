@@ -4,6 +4,21 @@
 
 A wallpaper app for minimal wallpapers.
 
-# Concept
+### Featues
+1. Beautifully designed.
+2. Animatins.
+3. Uses firebase database.
 
-<img width='800' hspace='20' src='https://github.com/vicky7230/MINIMO/blob/master/app/src/main/res/drawable/playstore_icon.png' />
+<p align="center">
+<kbd>
+  <img src="https://github.com/vicky7230/MINIMO/blob/master/graphics/1.png" width="250">
+</kbd>
+<kbd>
+  <img src="https://github.com/vicky7230/MINIMO/blob/master/graphics/2.png" width="250">
+</kbd>
+<kbd>
+  <img src="https://github.com/vicky7230/MINIMO/blob/master/graphics/3.png" width="250">
+</kbd>
+</p>
+<br>
+
